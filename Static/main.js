@@ -19,11 +19,7 @@ function init() {
             }
             let list1 = elements[i].id.split("-"); //when you want to get the first item
             let sectionID = list1[0] + "-text"; //id becomes efd-text
-
-
-
             id(sectionID).classList.remove("hidden");
-
         })
     }
 
