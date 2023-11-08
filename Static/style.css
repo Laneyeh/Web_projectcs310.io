@@ -51,3 +51,7 @@ h2 {
 .description {
     color: #E9EDC9;
 }
+
+.hidden {
+    display: None;
+}
