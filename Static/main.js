@@ -2,8 +2,6 @@ window.addEventListener("load", init);
 
 
 function init() {
-    // $('#navigator').load('efd.html');
-    // $('#navigator').load('ge.html');
     let elements = qsa(".nav-link");
     for (let i = 0; i < elements.length; i++) {
         elements[i].addEventListener("mouseover", () => {
