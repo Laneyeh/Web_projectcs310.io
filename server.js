@@ -5,8 +5,35 @@
     const fs = require("fs").promises;
     const app = express();
     const PORT = process.env.PORT || 8080;
+    const DB_PATH = "databases.db";
+
+    app.get("/images", function (req, res) {
+        try {
+            let cate = res.query.cate;
+            if (!cate) {
+                return res.status(400).json({ "message": "you're missing some parameters! please try again" });
+            }
+            let images = getImages(cate);
+            //returning the list of images
+            return res.status(200).json(images);
+        }
+        catch (err) {
+            console.log(err);
+            return res.status(500).json({ "message": "internal server error" });
+        }
+    })
 
 
+    async function getImages(cate) {
+        const db = await getDBConnection();
+        const query = "SELECT * from data WHERE imageCategory=?; ";
+        const rows = await db.all(query, [cate]);
+        // console.log(rows);
+
+        await db.close(); // close the database connection
+
+        return rows;
+    }
     //readFile function
     async function readFile(file_name) {
         try {
@@ -20,4 +47,19 @@
     }
     app.listen(PORT);
     console.log('Server started at http://localhost:' + PORT);
+
+    //helper function
+    /**
+ * Establishes a database connection to the database and returns the database object.
+ * Any errors that occur should be caught in the function that calls this one.
+ * @returns {sqlite3.Database} - The database object for the connection.
+ */
+    async function getDBConnection() {
+        const db = await sqlite.open({
+            filename: DB_PATH,
+            driver: sqlite3.Database
+        });
+
+        return db;
+    }
 })();
