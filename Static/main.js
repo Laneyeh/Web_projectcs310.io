@@ -20,6 +20,10 @@ function init() {
             id(sectionID).classList.remove("hidden");
         })
     }
+    let source = qsa(".nav-link");
+    source[i].addEventListener("click", () => {
+        $navigator.load(learnContact.html);
+    })
 
 }
 
