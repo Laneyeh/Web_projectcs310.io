@@ -1,12 +1,17 @@
 (function () {
     "use strict";
-    //consts:
+    //consts: installed packages
     const express = require("express");
+    const multer = require("multer");
+    const sqlite3 = require('sqlite3');
+    const sqlite = require('sqlite');
     const fs = require("fs").promises;
+
     const app = express();
     const PORT = process.env.PORT || 8080;
     const DB_PATH = "databases.db";
 
+    app.use(multer().none()); //for multipart/form data
     app.get("/images", function (req, res) {
         try {
             let cate = res.query.cate;
