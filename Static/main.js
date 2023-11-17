@@ -20,6 +20,7 @@ function init() {
             id(sectionID).classList.remove("hidden");
         })
     }
+    window.location = "learnMore.html";
     let source = qsa(".nav-link");
     source[i].addEventListener("click", () => {
         $navigator.load(learnContact.html);
