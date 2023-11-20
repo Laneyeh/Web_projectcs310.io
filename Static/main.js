@@ -27,10 +27,12 @@ function init() {
 
 }
 
-window.addEventListener("load", moreInfo);
-function moreInfo() {
-    let element = qs(".nav-link");
-}
+// what I'm not done yet as of 11/17/23
+
+// window.addEventListener("load", moreInfo);
+// function moreInfo() {
+//     let element = qs(".nav-link");
+// }
 
 
 
