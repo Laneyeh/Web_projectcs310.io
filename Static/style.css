@@ -49,7 +49,9 @@ h2 {
     text-shadow: 4px 4px 4px #aaa;
 }
 
-h5 {
+h5,
+h4,
+h3 {
     font-family: Agbalumo, serif;
     color: green;
 }

@@ -1,8 +1,8 @@
 const categories = {
-    "efd-text": "eco-friendly design",
-    "ge-text": "greenhouse emissions",
-    "spb-text": "solar power benefits",
-    "ee-text": "energy efficiency"
+    "efd-nav": "eco-friendly design",
+    "ge-nav": "greenhouse emissions",
+    "spb-nav": "solar power benefits",
+    "ee-nav": "energy efficiency"
 };
 window.addEventListener("load", init);
 
@@ -10,13 +10,13 @@ window.addEventListener("load", init);
 function init() {
     let elements = qsa(".nav-link");
     for (let i = 0; i < elements.length; i++) {
-        elements[i].addEventListener("mouseover", () => {
+        elements[i].addEventListener("mouseover", function () {
             elements[i].classList.add("active");
         });
         elements[i].addEventListener("mouseout", () => {
             elements[i].classList.remove("active");
         });
-        elements[i].addEventListener("click", () => {
+        elements[i].addEventListener("click", function () {
             let sections = qsa(".section-text");
             for (let i = 0; i < sections.length; i++) {
                 sections[i].classList.add("hidden");
@@ -27,23 +27,23 @@ function init() {
             showImages(this.id);
         })
     }
-    let source = qsa(".nav-link");
-    source[i].addEventListener("click", () => {
-        $navigator.load(learnMore.html);
-    })
-
 }
 
 //showImages Function
 function showImages(cateID) {
+    console.log(cateID);
     let url = "http://localhost:8080/images?cate=" + categories[cateID];
     fetch(url)
         .then(checkStatus)
-        .then(console.log(categories));
+        .then(showResponse);
 }
 
 
+//function: showResponse
 
+function showResponse(data) {
+    console.log(data);
+}
 
 
 /**
@@ -84,5 +84,6 @@ function checkStatus(response) {
     if (!response.ok) {
         throw Error("Error in request: " + response.statusText);
     }
-    return response;
+    return response.json();
 }
+

@@ -9,7 +9,7 @@
 
     const app = express();
     const PORT = process.env.PORT || 8080;
-    const DB_PATH = "databases.db";
+    const DB_PATH = "database.db";
 
     app.use(multer().none()); //for multipart/form data
     app.get("/images", function (req, res) {
