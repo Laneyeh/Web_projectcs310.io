@@ -14,7 +14,7 @@
     app.use(multer().none()); //for multipart/form data
     app.get("/images", function (req, res) {
         try {
-            let cate = res.query.cate;
+            let cate = req.query.cate;
             if (!cate) {
                 return res.status(400).json({ "message": "you're missing some parameters! please try again" });
             }
@@ -33,7 +33,7 @@
         const db = await getDBConnection();
         const query = "SELECT * from data WHERE imageCategory=?; ";
         const rows = await db.all(query, [cate]);
-        // console.log(rows);
+        console.log(rows);
 
         await db.close(); // close the database connection
 
