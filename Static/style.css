@@ -49,6 +49,18 @@ h2 {
     text-shadow: 4px 4px 4px #aaa;
 }
 
+h5 {
+    font-family: Agbalumo, serif;
+    color: green;
+}
+
+#description {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5F6F52;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .description {
     color: #E9EDC9;
 }
