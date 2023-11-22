@@ -54,10 +54,16 @@ h5 {
     color: green;
 }
 
-#description {
+#description,
+#text,
+.text {
     font-family: Arial, Helvetica, sans-serif;
     color: #5F6F52;
     font-weight: bold;
+    font-style: italic;
+}
+
+#quote {
     font-style: italic;
 }
 
