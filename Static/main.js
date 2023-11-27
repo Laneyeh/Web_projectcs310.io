@@ -1,8 +1,8 @@
 const categories = {
-    "efd-nav": "eco-friendly design",
-    "ge-nav": "greenhouse emissions",
-    "spb-nav": "solar power benefits",
-    "ee-nav": "energy efficiency"
+    "efd": "eco-friendly design",
+    "ge": "greenhouse emissions",
+    "spb": "solar power benefits",
+    "ee": "energy efficiency"
 };
 window.addEventListener("load", init);
 
@@ -24,7 +24,8 @@ function init() {
             let list1 = elements[i].id.split("-"); //when you want to get the first item
             let sectionID = list1[0] + "-text"; //id becomes efd-text
             id(sectionID).classList.remove("hidden");
-            showImages(this.id);
+            let cateID = this.id.split("-")[0];
+            showImages(cateID);
         })
     }
 }
@@ -35,14 +36,25 @@ function showImages(cateID) {
     let url = "http://localhost:8080/images?cate=" + categories[cateID];
     fetch(url)
         .then(checkStatus)
-        .then(showResponse);
+        .then((data) => {
+            showResponse(data, cateID);
+        });
 }
 
 
 //function: showResponse
 
-function showResponse(data) {
-    console.log(data);
+function showResponse(data, cateID) {
+    for (let i = 0; i < data.length; i++) {
+        let image = document.createElement("img");
+        image.src = data[i].imageURL;
+        let paragraph = document.createElement("p");
+        paragraph.innerText = data[i].imageDescription;
+        let divID = cateID + "-images";
+        id(divID).appendChild(paragraph);
+        id(divID).appendChild(image);
+
+    }
 }
 
 

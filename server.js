@@ -11,14 +11,15 @@
     const PORT = process.env.PORT || 8080;
     const DB_PATH = "database.db";
 
+    app.use(express.static("Static"));
     app.use(multer().none()); //for multipart/form data
-    app.get("/images", function (req, res) {
+    app.get("/images", async function (req, res) {
         try {
             let cate = req.query.cate;
             if (!cate) {
                 return res.status(400).json({ "message": "you're missing some parameters! please try again" });
             }
-            let images = getImages(cate);
+            let images = await getImages(cate);
             //returning the list of images
             return res.status(200).json(images);
         }

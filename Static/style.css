@@ -16,6 +16,11 @@ header {
     padding: 40px;
 }
 
+.images-div img {
+    width: 80%;
+    padding: 20px 0px 20px 0px;
+}
+
 h2 {
     font-style: italic;
 }
@@ -75,4 +80,8 @@ h3 {
 
 .hidden {
     display: None;
+}
+
+#title-text {
+    font-family: "Arial", sans-serif;
 }

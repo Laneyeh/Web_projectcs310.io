@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet">
+  <!-- Google Font API-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Agbalumo">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+  <!-- LearnMore.html-->
+  <link href="learnMore.html" rel="import" />
+  <!-- JQuery-->
+  <!-- <script src="https://releases.jquery.com/git/jquery-git.min.js"></script> -->
+  <script src="main.js"></script>
+  <title>Web Development Website Project- Humble</title>
+  <!-- <script type=" module" crossorigin src="/assets/index-aa481c2a.js">
+  </script>
+  <link rel="stylesheet" href="/assets/index-731a4034.css"> -->
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/d896ee4cb8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="row">
+    <div class="col-1">
+      <img class="main_logo" src="main_project_logo.png" alt="website logo">
+    </div>
+    <div class="col">
+      <h1> Code Green</h1>
+      <h2> Digital Innovations for a Green Tommorow!</h3>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <div class="row">
+      <div id="navigator" class="col-3">
+        <div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 10 rem;">
+          <a href="#" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip"
+            data-bs-placement="right" data-bs-original-title="Navigator">
+            <span id="title-text">Find What you're looking for here!</span>
+          </a>
+          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link py-3 border-bottom" id="efd-nav" aria-current="page" title=""
+                data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Greenhouse Emissions">
+                <i class="fa-brands fa-pagelines" style="color: #1f512e;"></i>
+                <span id="title-text">Eco-Friendly Design</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link py-3 border-bottom" id="ge-nav" aria-current="page" title=""
+                data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Greenhouse Emissions">
+                <i class="fa-solid fa-tree" style="color: #1f512e;" width="20px"></i>
+                <span id="title-text">Greenhouse Emissions</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link py-3 border-bottom" id="spb-nav" data-bs-toggle="tooltip"
+                data-bs-placement="right" data-bs-original-title="Solar Power Benefits">
+                <i class="fa-light fa-solar-panel" style="color: #1f512e;"></i>
+                <span id="title-text">Solar Power Benefits</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link py-3 border-bottom" id="ee-nav" data-bs-toggle="tooltip"
+                data-bs-placement="right" data-bs-original-title="Energy Efficiency">
+                <i class="fa-solid fa-seedling" style="color: #1f512e;"></i>
+                <span id="title-text"> Energy Efficiency</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link py-3 border-bottom" id="learnMore-nav" data-bs-toggle="tooltip"
+                data-bs-placement="right" data-bs-original-title="Sources and Contact">
+
+                <i class="fa-solid fa-plant-wilt" style="color: #1f512e;"></i>
+                <span id="title-text">Learn More</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="intro" class="section-text col">
+        <p>
+        <h1>Welcome to my website!</h1>
+        </p>
+        <p>
+        <h5>So.. What is this Website for???</h5>
+        <div id="description">
+          Code Green is an informative website about the benefits of computer scientists
+          towards climate and environmental issues while also containing fun designs,
+          inforgraphics, and easy to digest information that everyone can understand. It
+          also contains the sources I got my information from so users that are interested
+          can learn more if they choose so.
+        </div>
+        <h5>My Hopes for the Website: </h5>
+        <div id="description">
+          I hope that making an informative website about this important issue that it
+          would not only make computer scientists feel more secure in their career choice
+          and their impact on the environment and the world around them. I hope that this
+          will also encourage the study of Computer Science and its so important towards the
+          impact of the Earth's future environment.
+        </div>
+        <h5>About the Creator:</h5>
+        <div id="description">
+          Hello! My name is Laney Humble and I am a sophomore at Elizabethtown College for a
+          dual major in Computer Science and Graphic Design. This website is mainly made as a
+          project for my 310 Web Development class, but a topic that I find important when it comes
+          to the impact of computer science on the world.
+        </div>
+        </p>
+      </div>
+      <div id="efd-text" class="hidden section-text col-8">
+        <h1 style="font-family:'Agbalumo',serif;"> Eco-Friendly Design</h1>
+        <div id="efd-images" class="images-div">
+        </div>
+        <div id='efd-description'>
+          <p class="text">
+            Using Drawing/Design software like Adobe Photoshop, 3dsMax, and AutoCAD, environmental in high quality
+            and
+            expressed in a quick fashion. All 3 of these softwares can create basic graphics with varying pros and
+            cons.
+            While hardware is always being updated daily, software is updated every so often and based on the needs
+            of
+            the users. Through these apps, they combine the essential principles of Computer-Aided Design through
+            combining.
+            Accumulation and artistic accomplishment. While the Computer performs the more intricate tasks with
+            handling
+            data
+            and graphs, the software the computer has already handles the tasks of image editing, resizing, scaling,
+            translation,
+            and rotation faster.
+          </p>
+          <p class="text">Through AutoCAD, you can build the basic design of software.</p>
+          </p>
+          <p class="text">
+            When it comes to engineering, they identify areas that need improvement and make their designs based off
+            of what
+            we need the most. For Example, computer models, they can stimulate the energy usage of a building under
+            different
+            condition, helping architects and engineers to design buildings that minimize energy waster and reduce
+            their
+            environmental impact. Engineering construction drawings always utilize image electronic equipment and
+            computers
+            to
+            help Designers perform design work, information storage, and undertake calculations. Engineers can
+            design solar
+            panels
+            and turbines to be more efficient and leads to more production of renewable energy production rather
+            than using
+            more
+            fossil fuels. They can optimize energy storage systems even when there is no wind or sun.
+          </p>
+          <p id="text">
+            With the changing development of technology and the environment daily: For example, big data, the
+            internet, and
+            artificial intelligence (otherwise known as AI), these changes can bring a powerful advantage when it
+            comes to
+            benefitting eco-friendly design. Throughh Eco-Friendly design, computer scientists and the general
+            public can
+            access information to and learn more about mastering new technologies, creative level and overall
+            improve the
+            level and diligence of computer-aided design throughout the years.
+          </p>
+        </div>
+      </div>
+      <div id="ge-text" class="hidden section-text col">
+        <h1 style="font-family:'Agbalumo',serif;">Greenhouse Emissions</h1>
+        <div id="ge-image" class="image-div">
+        </div>
+        <div id="ge-description">
+          <p id="text">
+            An important aspect of Greenhouse Emissions and how computer science benefits from this is Quantum
+            Computing,
+            which
+            could help revolutionize the fight for climate change immensely. Quantum Computers utilizes Quantum
+            Physics and
+            its
+            principles to quickly solve problems that would be impossible for classic computers to solve. This plays
+            a big
+            factor in
+            limiting global warming to the target temperature of 1.5 degrees C which in turn, helps reduce emission.
+            But
+            since Quantum
+            computers are so powerful, they are extremely expensive, but this is something the country has to put a
+            LOT of
+            money towards
+            since the computer holds a lot of power, bytes, and rams.
+          </p>
+          </p>
+          <p id="text">
+          <h4>Batteries: </h4>
+          Batteries are important in order to achieve zero carbon electrification and can benefit the storage solution
+          used in
+          the grid scale.
+          </p>
+          <p id="text">
+          <h4>Solar Cells:</h4>
+          Solar Cells are based off of perovskite crystal structures which is being used as the greater alternative
+          with the
+          efficiency being
+          able to go up to 40%, though brings up challenges including the lack of long term stability and can become
+          more
+          toxic overtime.
+          Solar Cells help solar panels use the energy they collect from the sunlight and transferring it into energy
+          that we
+          can use on a daily
+          basis as an alternative for fossil fuels.
+
+          for Example, using Hydrogen and Ammonia as replacements for Fossil Fuels. Solar Cells are made through
+          natural gas
+          and allows Co2 to
+          be captured directly, which is important because this process collecting Co2 can get expensive.
+          </p>
+          <p id="text">
+          <h4> So... What solutions can come from this???</h4>
+          Quantum Computing promises to enable more accurate modeling structure to make effective and new solvents to
+          range
+          out new Co2 sources.
+          This reduces the cost to process from 30% to 50% through direct air capture. This involves literally sucking
+          the Co2
+          out of the air and
+          is a way to address carbon removals
+          <p id="quote">
+            "major tech companines have already developed small, so called noise-intermediate-scale quantum(NISQ)
+            machines,
+            thouugh these aren't
+            capable of performing the type of calculations that fully capable quantum computers are expected to
+            perform."
+
+          </p>
+        </div>
+      </div>
+      <div id="spb-text" class="hidden section-text col">
+        <h1 style="font-family:'Agbalumo',serif;">Solar Power Benefits</h1>
+        <div id="spb-image" class="image-div">
+        </div>
+        <div id="spb-description">
+          <p>
+            With every passing moment, solar panels are becoming more efficient and less exprensive every year, but how
+            can
+            we
+            derive even more energy from a solar plant working as computer scientists?
+
+            One solution that has been in the works since 1978, is a solar computer. Solar Panels have become capable of
+            charging
+            computers directly, which helps when charging computers directly which help charge electronics. Some
+            mechanic
+            magazines
+            in 1978 thought of a do-it-yourself solar energy commputer to combat this issue.The end product would charge
+            the
+            battery
+            during the day with the battery powering the computer during the night. Though this system could be
+            functional,
+            it was not
+            as practical or efficient to be used on a daily basis. But these magazines started the ideas around the
+            Solar
+            Computer.
+          </p>
+          <p>
+          <h2> While solar computers don't exist yet, there are two main methods to run a computer based on solar power
+          </h2>
+          <ol>
+            <li>Using a home solar power system to charge your electronic devices</li>
+            <li>Deriving energy completely from a solar plant</li>
+          </ol>
+          Through whatever way you make a solar computer, they will need to rely heavily on solar panels as they are BIG
+          converters for energy from the sunlight and turning it into electrical energy. Through using solar computers,
+          you
+          will save money on your electricity bills, you PC will always have power, and you are using energy to power
+          your
+          computer rather than fossil fuels.
+          </p>
+        </div>
+      </div>
+      <div id="ee-text" class="hidden section-text col">
+        <h1 style="font-family:'Agbalumo',serif;">Energy Efficiency</h1>
+        <div id="ee-image" class="image-div"></div>
+      </div>
+      <div id="ee-description">
+        <p>
+          Energy is a limiting resource in a world fueled by computers and in order to better climate change through
+          computer science, we need a better understanding of energy efficiency.- Energy efficiency refers to the way
+          through
+          which the growth of energy consumption can be managed and prevented. This is really important knowing the
+          rising
+          prices of energy and expansion of large data set (big data) processing demand. The challenge of energy
+          efficiency
+          comes with the opportunity to improve it by getting a detailed analysis of the energy metric
+        <p>
+        <h4>What is the energy metric?</h4>
+        <p>
+          a measure or standard for assessing how much energy is being used or consumed by a particular system,
+          device, or process.
+          It helps you understand and compare the energy efficiency of different things. The metric could be expressed
+          in various
+          units like watts, joules, or other energy-related units to quantify the amount of energy involved. In
+          summary, it tells the user
+          how much power something generates.
+        </p>
+        <p>
+          Though the measurement of energy efficiency is a challenge because there is no real way to “measure” energy
+          some
+          studies are trying to show the impact of what could happen if we efficiently use our energy within the
+          computer science career.
+        </p>
+        <h4> Cognitive Radio Systems: </h4>
+        <p>
+          A cognitive radio is one of many forms of wireless communication devices that can change and adapt based
+          on radio frequencies and its environement. This helps with radio and wireless communication and through
+          calling and texting, this is something that is used everyday. We are always looking for a more flexible
+          and efficient way of communicating with one another and it's no surprise that this uses up a lot of energy.
+
+
+          Cognitive Radio Systems need to perform the following...
+        <ul>
+          <li>Data Transmission</li>
+          <li>Spectrum Sensing</li>
+          <li>Spectrum availability preditction while conserving energy</li>
+        </ul>
+        this holds the potential to decrease carbon emissions
+        </p>
+        <p>
+        <h3 style="font-family:'Agbalumo',serif;"> Study at Oregon State University</h3>
+        The computer science students at Oregon state university had a breakthrough in reducing
+        the energy consumption of computer chips specifically used in data centers and super computers.
+        This helps greatly because a data center could consume up to 50 times more energy per square foot of
+        floor space more than a typical office building. The study was supported by the U.S national
+        Science foundation. When modifying the hardware inside of a computer, it can cut the energy consumed,
+        which is what helped them find success in their study.
+        </p>
+
+        <p>
+          If we can find a way for computers to use less energy efficiency, this could lead to laptops and other
+          electronics being smaller and lighter, perform complicated calculations, unprecedented speed, and
+          especially,
+          generate less heat, which will benefit out environment.
+        </p>
+      </div>
+    </div>
+    <div id="learnMore-text" class="hidden section-text col">
+      <h1> Thank you so much for checking my website out!</h1>
+      <h3 style="font-family:'Agbalumo',serif;"> Sources:</h3>
+      <ul>
+        <li>https://iopscience.iop.org/article/10.1088/1742-6596/1802/3/032014/pdf</li>
+        <li>https://www.mdpi.com/2071-1050/14/14/8927</li>
+        <li>https://www.linkedin.com/pulse/sustainable-engineering-meets-computer-science-impact-nishant-bharti/
+        </li>
+        <li>
+          https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-computing-just-might-save-the-planet
+        </li>
+        <li>https://sing.stanford.edu/site/projects/9</li>
+        <li>https://www.sciencedirect.com/topics/computer-science/energy-efficiency</li>
+        <li>
+          https://www.hellovaia.com/explanations/computer-science/issues-in-computer-science/energy-consumption-of-computers/
+        </li>
+        <li>https://new.nsf.gov/news/breakthrough-computer-chip-energy-efficiency-could</li>
+        <li>
+          https://energy.mit.edu/research/energy-efficient-computing/#:~:text=The%20researchers%20have%20proved%20mathematically,computing%20by%20a%20million%20times
+        </li>
+      </ul>
+
+
+      <h3> Contact Information</h3>
+      <ol>
+        <li>Email: humblel@etown.edu</li>
+      </ol>
+    </div>
+    </div>
+  </main>
+</body>
