@@ -85,3 +85,16 @@ h3 {
 #title-text {
     font-family: "Arial", sans-serif;
 }
+
+a {
+    color: #5F6F52;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+a:active {
+    color: purple;
+}
