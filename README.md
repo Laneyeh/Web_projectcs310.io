@@ -17,7 +17,7 @@ Here are the API's I used for this project:
 - SQL
     - used for setting up, managing, and adding into the database.
     - Request Type: GET
-    - Request parameters: 
+    - Request parameters: 'GET', 'POST','PUT'
     - Response Types: JSON format
     - Description:
         - This request takes the image request and response in JSON containing the information and images relating to that topic.
