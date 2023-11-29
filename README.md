@@ -1,11 +1,19 @@
 # Web_projectcs310.io
 Web Project for Web Development Class
 
-## Description of my project:
-My website project is an informative website of the benefits of computer scientists towards climate and environmental changes and what positive changes have been made due to computer science while containing fun designs, infographics and easy to digest information.
-
-## Update as of 11/20/23
-From the navigation sidebar, the user can access a wide variety of information regarding the subjects of interest. Along with sources that they can look at the information for if they're more interested. The design and the layout of the website has changed to be more user-friendly.
-
-## Initial Design/Layout Plan
-<img width="871" alt="image" src="https://github.com/Laneyeh/Web_projectcs310.io/assets/142757149/69bf1693-7a5f-4eb8-bdc2-6efe8c1b184b">
+## Introduction:
+Hello! Welcome to my documentation where I talk about my website Code Green! This website was built to be an informative website about the benefits and the positive impact computer science is having towards climate change and other environmental issues while also having images, sources for more information, and a natural-toned aesthetic. Through this website I hope to build more of a positive reputation behind the reasons to go into Computer Science.
+## An instruction on importing the Database:
+## Setting up the project on a local machine:
+## API Documentation:
+Here are the API's I used for this project:
+- Google Fonts
+    - used for the fun title and subtitle fonts
+    - Request type:
+    - Request parameters:
+    - Response type:
+- SQL
+    - used for setting up, managing, and adding into the database.
+    - Request Type:
+    - Request parameters:
+    - Response Types:
