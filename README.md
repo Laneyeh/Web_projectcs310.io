@@ -15,17 +15,18 @@ put in the following command to upload the database:
     `nodemon server.js`
 ## API Documentation:
 Here are the API's I used for this project:
-- Google Fonts
-    - used for the fun title and subtitle fonts
-    - Request type: GET
-    - Request parameters: 'family','display','subset','text'
-    - Response type: CSS Format
-    - Description: 
-        - this request takes the parameter css?family=Agbalumo and css?family=Mulish and returns a CSS response in changing the font to the re.spective types throughout the website.
-- SQL
-    - used for setting up, managing, and adding into the database.
+
+- http://localhost:8080/images
     - Request Type: GET
-    - Request parameters: 'GET', 'POST','PUT'
-    - Response Types: JSON format
-    - Description:
-        - This request takes the image request and response in JSON containing the information and images relating to that topic.
+    - Request Format: http://localhost:8080/images?cate=[category]
+    - Request Parameters: 
+        - `cate` is the required parameter, which can only use the following values:
+        - "eco-friendly design"
+        - "greenhouse emissions"
+        - "solar power benefits"
+        - "energy efficiency"
+    - Returned Data: JSON format
+    - Description: this is a get request to get the images associated with the category the user clicks.
+        - Example: http://localhost:8080/images?cate=eco-friendly%20design
+        - Returned result:
+            ![get request result](README_images/image.png)
