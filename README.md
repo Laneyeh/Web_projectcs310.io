@@ -8,8 +8,7 @@ put in the following command to upload the database:
 `sqlite3 database.db < schema.sql`
 
 ## Setting up the project on a local machine:
-1. 
-run the following command to install the following packages into packages.json:
+1. run the following command to install the following packages into packages.json:
     `npm install express`
     `npm install multer`
     `npm install sqlite`
