@@ -7,8 +7,6 @@
     const sqlite = require('sqlite');
     const fs = require("fs").promises;
 
-    const createUnixSocketPool = require('./connect-unix.js');
-
     const app = express();
     const PORT = process.env.PORT || 8080;
     const DB_PATH = "database.db";
