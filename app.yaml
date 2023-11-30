@@ -1,10 +1,10 @@
 runtime: nodejs18
 
 env_variables:
-  INSTANCE_UNIX_SOCKET: /cloudsql/etown-questions-queue:us-central1:etown-qq
+  INSTANCE_UNIX_SOCKET: /cloudsql/etown-code-green:uscentral1:code-green
   DB_USER: root
-  DB_PASS: etown-qq
-  DB_NAME: etownqq
+  DB_PASS: etown-code-green
+  DB_NAME: etowncodeGreen
   
 
 handlers:
