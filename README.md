@@ -20,7 +20,7 @@ Here are the API's I used for this project:
     - Request parameters: 'family','display','subset','text'
     - Response type: CSS Format
     - Description: 
-        - this request takes the parameter css?family=Agbalumo and css?family=Mulish and returns a CSS response in changing the font to the respective types throughout the website.
+        - this request takes the parameter css?family=Agbalumo and css?family=Mulish and returns a CSS response in changing the font to the re.spective types throughout the website.
 - SQL
     - used for setting up, managing, and adding into the database.
     - Request Type: GET
