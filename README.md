@@ -9,8 +9,8 @@ put in the following command to upload the database:
 
 ## Setting up the project on a local machine:
 1. run the following command to install the following packages into packages.json file:
-    `npm install`
-    `npm install -g nodemon`
+    - `npm install`
+    - `npm install -g nodemon`
 2. run the following command to start running the project:
     `nodemon server.js`
 ## API Documentation:
