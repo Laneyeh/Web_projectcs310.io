@@ -33,7 +33,7 @@ function init() {
 //showImages Function
 function showImages(cateID) {
     console.log(cateID);
-    let url = "http://localhost:8080/images?cate=" + categories[cateID];
+    let url = "/images?cate=" + categories[cateID];
     fetch(url)
         .then(checkStatus)
         .then((data) => {
